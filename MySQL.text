@@ -1,0 +1,52 @@
+-- create database Vacationsdata; 
+
+-- use Vacationsdata;
+
+-- CREATE TABLE users (
+--     id INT AUTO_INCREMENT,
+--     firstname VARCHAR(20),
+--     lastname VARCHAR(20),
+--     username VARCHAR(20),
+--     password VARCHAR(20),
+--     role VARCHAR(10) DEFAULT 'user',
+--     PRIMARY KEY (id)
+-- );
+
+-- insert into users(firstname, lastname, username, password , role)
+-- values("Eden" , "Arbiv", "edenarbiv", "123", "admin");
+
+-- insert into users(firstname, lastname, username, password )
+-- values("Dana" , "Cohen", "danacohen", "321"),
+-- ("Shira" , "Levi", "shiralevi", "555");
+
+-- CREATE TABLE vacation (
+--     id INT AUTO_INCREMENT,
+--     destination VARCHAR(20),
+--     description TEXT(800),
+--     image TEXT(350),
+--     startdate VARCHAR(20),
+--     enddate VARCHAR(20),
+--     price INT,
+--     followers INT DEFAULT 0,
+--     checked BOOLEAN DEFAULT false,
+--     PRIMARY KEY (id)
+-- );
+
+
+-- insert into vacation(destination, description, image, startdate, enddate, price, followers)
+-- values("Caribbean", "A Caribbean cruise is much more than sun, sand and surf. And the proximity of islands allow you to sample the regional flavor and local adventures, that have earned many an island a sobriquet. Carnivals, pageants, Calypso music, casinos, shopping and cricket, the Caribbean vacation experience has plenty for all.", "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/island-9cc41fb.jpg?quality=90&resize=556,505", '2022-06-10', '2022-07-10', 9000, 0),
+-- ("Thailand", "It's hard to summarize the diversity of travel to Thailand. Its capital, Bangkok, is a teeming metropolis with gilded temples and palaces, while the two coastlines, on the Andaman Sea and the Gulf of Thailand, have postcard-perfect beaches. In the mountainous interior, hill tribes live as they have for millennia. And wherever you travel in Thailand, there's the food: fresh seafood, countless curries, and noodle dishes so delicious you'll never want to return to your local Thai take-out. Your most lasting impression, however, will be the friendliness of the locals - calling Thailand the 'land of smiles'; may seem cliché, but it has a foundation in truth.", "https://www.ias.co.il/wp-content/uploads/thumbs/123-1-3ckr9l5tq0ypjslrisc074.jpg", '2022-07-18', '2022-08-15', 9990, 0),
+-- ("Paris", "Paris is a city unlike any other. It is overflowing with culture, history, and beauty. And while people travel to Paris to see the Louvre, climb the Eiffel Tower, or see Notre-Dame, the real magic is found in the streets. Here, the ins and outs of daily life play out — chic women on bikes pedal their children to school, artists post up in cafés with a notebook, and both young and old line up morning and evening for a fresh baguette from the neighborhood boulangerie. It is likely everything you imagined, and then a bit more — because while Paris is a city with a strong cultural identity, it also houses people from all over the world who add their own culture and customs into the mix. This is why a visit to Paris' top sights is simply not enough — to truly get a sense of the city, take to the streets where the essence and enchantment of Paris is most felt. ", "https://media.reshet.tv/image/upload/t_image_article/h_427,w_640/v1625650119/shutterstock_667548661_u8pqe8.jpg", '2022-06-15', '2022-06-30', 2950 , 0),
+-- ("Canada", "The expanse of Canada's natural beauty, from mountains and glaciers to secluded lakes and forests, is almost unparalleled worldwide. But Canada's allure is not just the great outdoors. Canada has cosmopolitan cities that are clean, safe, friendly, and multicultural", "https://hagira.co.il/wp-content/uploads/2020/06/%D7%A7%D7%A0%D7%93%D7%94-scaled.jpg", '2022-08-01', '2022-08-22', 5500, 0),
+-- ("Mexico", "what makes Mexico famous? It's vibrant and colorful culture has spread around the world, and the country is now known for its spicy cuisine, festive drinks, and some of the best beach destinations in the world.", "https://www.planetware.com/wpimages/2019/09/mexico-in-pictures-most-beautiful-places-to-visit-palacio-bellas-artes.jpg", '2022-05-11', '2022-05-21', 4200, 0),
+-- ("Switzerland", "Switzerland is famous for its mesmerizing alpine scenery, luxury branded watches, and deliciously milky chocolate. A melting pot of many different cultures, Switzerland is also known for its alluring cities and scenic train rides that showcase the best of the country's natural vistas.", "https://www.masa.co.il/wp-content/uploads/2017/01/switzerland.jpg", '2022-09-01', '2022-09-22', 6700, 0);
+
+
+-- CREATE TABLE follow (
+-- id INT AUTO_INCREMENT,
+-- user_id INT,
+-- vacation_id INT,
+-- PRIMARY KEY (id),
+-- FOREIGN KEY (user_id) REFERENCES users (id),
+-- FOREIGN KEY (vacation_id) REFERENCES vacation (id)
+-- );

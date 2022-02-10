@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+.title{
+  font-family: 'Source Serif 4';
+  background-size: cover;
+  background-image: url(https://images.vexels.com/media/users/3/268199/raw/7cc223c11bec62c445029ca7e9e68282-rainbow-smoke-cloud-background-design.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login ,.register{
+  text-align: center;
+  padding: 2%;
+}
+
+.err{
+  color: red;
+}
+
+.vacations{
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.desc{
+  color: gray;
+}
+
+.checkbox{
+  position: fixed;
+  right: -42%;
+  z-index: 999;
+}
+
+.image{
+  position: absolute;
+  top: -18%;
+}
+
+.text{
+  position: relative;
+  margin-top: 35%;
+}
+.edit{
+  z-index: 999;
+  position: relative;
+  background: none;
+  border: none;
+  right: -40%;
+}
+.icon{
+  color: white;
+}
+
+.edit :hover{
+  cursor: pointer;
+}
+.title :hover{
+  cursor: pointer;
+}
+
+.formvacation{
+  text-align: center;
+  padding: 2%;
+}
+
+.formvacation >*  p{
+  color: gray;
+  font-size: 12px;
+}
+
+.formvacation >* img{
+  width: 500px;
+}
+
+.description{
+  width: 600px;
+  height: 180px;
+}
+
+.chart{
+  padding: 1% 20%;
+  text-align: center;
+}
