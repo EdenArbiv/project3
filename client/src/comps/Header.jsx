@@ -150,7 +150,7 @@ export default function Header({setsearch, checkedarr, user}) {
             </Badge>
             </IconButton> :
             <div>
-             <MenuItem onClick={handleProfileMenuOpen}>
+             <MenuItem >
             <IconButton
             size="large"
             color="inherit"
