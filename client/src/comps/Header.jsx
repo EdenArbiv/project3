@@ -149,6 +149,7 @@ export default function Header({setsearch, checkedarr, user}) {
             <StarIcon />
             </Badge>
             </IconButton> :
+            <div>
              <MenuItem onClick={handleProfileMenuOpen}>
             <IconButton
             size="large"
@@ -159,8 +160,21 @@ export default function Header({setsearch, checkedarr, user}) {
             </IconButton>
             <p>Add Vacation</p>
             </MenuItem>
+            <MenuItem >
+            <IconButton
+                size="large"
+                color="inherit"
+                onClick={() => navigate('/reports')}
+            >
+            <Badge badgeContent={"R"} color="error">
+            <AssessmentIcon/>
+            </Badge>
+            </IconButton>
+            <p>Reports</p>
+            </MenuItem>
+            </div>
         }
-        <MenuItem onClick={handleProfileMenuOpen}>
+        <MenuItem >
         <IconButton
                 size="large"
                 edge="end"
@@ -168,23 +182,14 @@ export default function Header({setsearch, checkedarr, user}) {
                 aria-controls={menuId}
                 aria-haspopup="true"
                 color="inherit"
-                onClick={LogOut}
+                onClick={() =>{
+                    LogOut()
+                    handleMobileMenuClose()
+                } }
                 >
                 <LogoutIcon/>
             </IconButton>
           <p>Log Out</p>
-        </MenuItem>
-        <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-            size="large"
-            color="inherit"
-            onClick={() => navigate('/reports')}
-        >
-        <Badge badgeContent={"R"} color="error">
-        <AssessmentIcon/>
-        </Badge>
-        </IconButton>
-          <p>Reports</p>
         </MenuItem>
       </Menu>
     );
