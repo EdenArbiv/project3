@@ -1,6 +1,6 @@
 # project3
-vacations - project in React , NodeJS and MySQL
-in the project you can login as user or as admin , you can register as new user , 
-user can follow on vacations , the followers vacations will display at the top.
-if you login as admin, you can add vacation , delete or update details.
-as admin you can watch which vacations is followed.
+vacations - project in React, NodeJS and MySQL 
+In the project you can log in as a user or as a manager,
+you can register as a new user, the user can track vacations, the followers' vacations will be displayed at the top of the list. 
+If you log in as an administrator, you can add a vacation, delete or update details. 
+As a manager you can view which vacancies are tracked on the reports page.
