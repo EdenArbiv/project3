@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-export default function Vacation({vacation, user_id, setupdate, vacation_id, update, checkedarr}) {
+export default function Vacation({vacation, user_id, setupdate, vacation_id, update}) {
     const navigate = useNavigate()
 
     useEffect(() => {

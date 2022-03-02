@@ -20,6 +20,7 @@ export default function Reports() {
             })
             const data = await res.json()
             console.log(data);
+    
             setchartdata(
             data.map(vacation => {return {
             x: vacation.destination , y: vacation.followers
@@ -31,6 +32,8 @@ export default function Reports() {
     }, []);
     
     console.log(chartdata);
+    
+    
 
   return ( <div className='chart'>
       <div style={{ height: 500}}>
